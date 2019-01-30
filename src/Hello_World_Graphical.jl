@@ -1,6 +1,9 @@
 #Hello World/Graphical
 #http://rosettacode.org/wiki/Hello_world/Graphical
+# Tk is not available/deprecated
+# maybe Gtk?
 
+#=
 using Tk
 
 window = Toplevel("Hello World", 200, 100, false)
@@ -13,5 +16,6 @@ txt = Label(fr, "Hello World")
 pack(txt, expand=true)
 
 set_visible(window, true)
+=#
 
 # sleep(7)

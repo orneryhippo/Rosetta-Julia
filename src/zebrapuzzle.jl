@@ -1,6 +1,7 @@
+using Combinatorics 
 
 function make(str, test = (_) -> true)
-  collect( filter(test, permutations(split(str))) )
+   filter(test, collect(permutations(split(str))))
 end
  
 men = make("danish english german norwegian swedish",

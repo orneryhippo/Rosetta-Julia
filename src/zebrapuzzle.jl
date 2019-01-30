@@ -28,6 +28,10 @@ function adj(x, xs, y, ys)
   1 == abs(findfirst(c -> c == x, xs) - findfirst(c-> c == y, ys))
 end
  
+function print_houses(n, pet, nationality, colors, drink, smokes)
+  println("$n, $pet,    $nationality       $colors       $drink    $smokes\n")
+end 
+
 for m = men, c = colors
   if eq("red",c, "english",m) && adj("norwegian",m, "blue",c)
     for d = drinks
@@ -43,10 +47,8 @@ for m = men, c = colors
                  adj("horse",p,"dunhill",s)
                 println("Zebra is owned by ", m[findfirst(c -> c == "zebra", p)])
                 println("Houses:")
-                for i in 1:5
-                  println("House $i")
-                  println(p[i]," ", m[i]," ", s[i]," ", c[i]," ", d[i])
-                  println()       
+                for house_num in 1:5
+                  print_houses(house_num,p[house_num],m[house_num],c[house_num],d[house_num],s[house_num])
                 end
               end
             end
@@ -56,4 +58,4 @@ for m = men, c = colors
     end
   end
 end
- 
+  

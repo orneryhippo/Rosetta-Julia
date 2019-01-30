@@ -1,4 +1,4 @@
-Rosetta-Julia
+Rosetta-Julia ***Needs to be updated for 1.0+
 =============
 
 This is a repository for Rosetta Code tasks implemented in the [Julia language](www.julialang.org).

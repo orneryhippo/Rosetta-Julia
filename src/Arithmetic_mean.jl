@@ -1,7 +1,7 @@
 #Arithmetic mean
 #http://rosettacode.org/wiki/Averages/Arithmetic_mean
 
-# Julia's <strike>built-in</strike> Statistics module mean function accepts AbstractArrays (vector, matrix, etc.)
+# Julia's <s>built-in</s> Statistics module mean function accepts AbstractArrays (vector, matrix, etc.)
 julia> using Statistics
 julia> mean([1,2,3])
 2.0

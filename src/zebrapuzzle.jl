@@ -29,7 +29,7 @@ function adj(x, xs, y, ys)
 end
  
 function print_houses(n, pet, nationality, colors, drink, smokes)
-  println("$n, $pet,    $nationality       $colors       $drink    $smokes\n")
+  println("$n, $pet,    $nationality       $colors       $drink    $smokes")
 end 
 
 for m = men, c = colors
